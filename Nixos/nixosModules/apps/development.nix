@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, ... }:
 {
 
   environment.systemPackages = with pkgs; [
@@ -10,6 +10,8 @@
     nixfmt
     nixd
 
+    gradle
+
     # CAD and Circuit
     # kicad
     fritzing
@@ -17,9 +19,13 @@
     logisim-evolution
 
     # Programing
-    lazygit       # Git TUI
+    lazygit # Git TUI
     vscode-fhs
     arduino-ide
+
+    # Tools
+    tldr
+    tealdeer
 
   ];
 }

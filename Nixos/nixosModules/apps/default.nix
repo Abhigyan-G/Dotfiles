@@ -8,6 +8,7 @@ in
     ./development.nix
     ./office.nix
     ./home-manager.nix
+    ./blender.nix
   ];
 
   # General Packages
@@ -41,7 +42,7 @@ in
     cool-retro-term
 
     lf
-    starship
+    # starship
     fzf
 
     peazip
@@ -53,6 +54,7 @@ in
     firefox
     librewolf
 
+    # Games
     wineWowPackages.staging
 
     osu-lazer-bin
@@ -75,6 +77,7 @@ in
     # })
 
     # protonup
+    r2modman
 
     wget
   ];

@@ -13,4 +13,15 @@ in
     ./default-applications.nix
   ];
 
+  gtk.iconCache.enable = true;
+  environment.sessionVariables = rec {
+    QS_ICON_THEME = "Breeze Dark";
+  };
+
+  environment.systemPackages = with pkgs; [
+    kdePackages.breeze-icons
+    adwaita-icon-theme
+    gsettings-qt
+  ];
+
 }

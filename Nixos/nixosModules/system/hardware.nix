@@ -26,6 +26,7 @@
         # intel-vaapi-driver # For older processors. LIBVA_DRIVER_NAME=i965
         vpl-gpu-rt
         intel-compute-runtime
+        nvidia-vaapi-driver
       ];
     };
 

@@ -1,10 +1,12 @@
-{ config, pkgs, ...}:
+{ config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
     # Note Taking
     rnote
     xournalpp
-  
+    drawy
+    drawio
+
     # PDF Manipulation
     pdfarranger
     tdf

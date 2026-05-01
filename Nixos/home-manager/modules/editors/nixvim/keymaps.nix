@@ -92,18 +92,21 @@
     {
       key = "<leader>sh";
       action = "<cmd>split<bar>wincmd j<CR>";
+      mode = "n";
       options.desc = "Horizontal split";
       options.silent = true;
     }
     {
       key = "<leader>sv";
       action = "<cmd>vsplit<bar>wincmd l<CR>";
+      mode = "n";
       options.desc = "Vertical split";
       options.silent = true;
     }
     {
       key = "<leader>sx";
       action = "<C-w>q";
+      mode = "n";
       options.desc = "Delete split";
       options.silent = true;
     }
@@ -112,24 +115,28 @@
     {
       key = "<C-h>";
       action = "<cmd>wincmd h<CR>";
+      mode = "n";
       options.desc = "Move left";
       options.silent = true;
     }
     {
       key = "<C-j>";
       action = "<cmd>wincmd j<CR>";
+      mode = "n";
       options.desc = "Move down";
       options.silent = true;
     }
     {
       key = "<C-k>";
       action = "<cmd>wincmd k<CR>";
+      mode = "n";
       options.desc = "Move up";
       options.silent = true;
     }
     {
       key = "<C-l>";
       action = "<cmd>wincmd l<CR>";
+      mode = "n";
       options.desc = "Move right";
       options.silent = true;
     }
@@ -164,6 +171,7 @@
     {
       key = "<leader>z";
       action = "<cmd>Yazi<CR>";
+      mode = "n";
       options.desc = "Yazi";
       options.silent = true;
     }
@@ -257,7 +265,6 @@
       mode = [
         "v"
         "n"
-        "i"
       ];
       options = {
         silent = true;

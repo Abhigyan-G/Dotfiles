@@ -26,4 +26,9 @@
     "modesetting" # Intel
   ];
 
+  environment.systemPackages = with pkgs; [
+    vulkan-tools
+    vulkan-validation-layers
+    vulkan-extension-layer
+  ];
 }

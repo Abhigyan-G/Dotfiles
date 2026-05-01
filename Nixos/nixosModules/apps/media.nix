@@ -1,4 +1,9 @@
-{ config, pkgs, ...}: 
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 let
 
 in
@@ -12,11 +17,11 @@ in
     # Audio Filter and Effects
     deepfilternet
     easyeffects
-    
+
     # Downloading Audio/Video
     media-downloader
     ytdownloader
-  
+
     # Video Editor
     kdePackages.kdenlive
 

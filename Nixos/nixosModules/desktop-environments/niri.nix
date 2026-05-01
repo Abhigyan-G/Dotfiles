@@ -57,7 +57,7 @@
       # alacritty
       fuzzel
       swaylock
-      mako
+      # mako # Remove Mako
       swayidle
 
     ]

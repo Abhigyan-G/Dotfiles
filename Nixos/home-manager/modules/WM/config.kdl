@@ -280,7 +280,9 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
-spawn-at-startup "mako"
+
+// spawn-at-startup "mako"
+
 spawn-at-startup "noctalia-shell"
 // spawn-sh-at-startup "pkill kded6"
 // spawn-at-startup "qs" "-c" "noctalia-shell"
@@ -354,12 +356,46 @@ window-rule {
     // block-out-from "screencast"
 }
 
+// For Noctalia Shell
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
+
+// Set the overview wallpaper on the backdrop.
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
+
+
+//
+//
+
+// Single Wallpaper On All the time and doesn't scroll when changing workspaces
+// // Set the regular wallpaper on the backdrop.
+// layer-rule {
+//   match namespace="^noctalia-wallpaper*"
+//   place-within-backdrop true
+// }
+//
+// // Set transparent workspace background color so you see the backdrop at all times.
+// layout {
+//   background-color "transparent"
+// }
+//
+// // Optionally, disable the workspace shadows in the overview.
+// overview {
+//   workspace-shadow {
+//     off
+//   }
+// }
+
+//
+//
+
 
 // From Noctalia Shell Docs
 // Qt Support
